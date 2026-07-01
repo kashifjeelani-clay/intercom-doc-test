@@ -39,7 +39,7 @@ With table-level auto-run off, no columns will run automatically when rows are a
 
 To turn off auto-run for a single column instead of the whole table, click the column name → **Edit column** → toggle **Auto-run** off under **Run settings** → **Save**.
 
-See [Table management settings](table-management-settings.md) for full details on table-level and column-level auto-run controls.
+See [Table management settings](../table-management-settings.md) for full details on table-level and column-level auto-run controls.
 
 ## Leveraging your API Keys
 
@@ -146,13 +146,13 @@ When using Find People as a source, broad searches can return thousands of resul
 
 In your Find People column settings, use **Limit results** to cap the total number of contacts imported per search. Use **Limit per company** to set a maximum number of people per employer—especially important when your search covers large parent companies or investment portfolio companies that could expand results far beyond your intent. Add company-level filters such as company size or industry to narrow the match universe before rows are created.
 
-See [Find People in Clay](find-people-overview.md) for the full list of filter and limit options.
+See [Find People in Clay](../find-people-overview.md) for the full list of filter and limit options.
 
 ## Use Sandbox Mode to test table changes safely
 
 **How does this save credits?**
 
-[Sandbox mode](sandbox-mode.md) lets you build and test table configurations—formulas, enrichments, waterfalls—on a small subset of rows without running them on your full table. Changes only go live when you explicitly publish them, so you can catch configuration mistakes and refine your setup before spending credits at scale.
+[Sandbox mode](../sandbox-mode.md) lets you build and test table configurations—formulas, enrichments, waterfalls—on a small subset of rows without running them on your full table. Changes only go live when you explicitly publish them, so you can catch configuration mistakes and refine your setup before spending credits at scale.
 
 **How do you implement this?**
 

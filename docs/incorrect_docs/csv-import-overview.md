@@ -29,9 +29,9 @@ Within Clay you can import CSV as a source to an existing or new table.
 4.  Map your CSV columns to the correct Clay table fields.
 5.  Choose how to handle the imported rows:
     -   `Save and run rows in this CSV` — imports the rows and immediately queues all enrichment columns to run on every imported row. If your table has enrichment columns configured (email finders, waterfalls, AI columns, etc.), they will all fire and consume credits.
-    -   `Save and don't run` — imports the rows without triggering any enrichments for this batch. This is a one-time skip for the current import only — it does not change your table's [Auto-run](table-management-settings.md) setting.
+    -   `Save and don't run` — imports the rows without triggering any enrichments for this batch. This is a one-time skip for the current import only — it does not change your table's [Auto-run](../table-management-settings.md) setting.
 
-    > **Tip:** If you're importing into a table that already has enrichment columns and you don't want them to run on the new rows, choose `Save and don't run`. If you want to prevent enrichments from automatically running on all future row additions as well, turn off **Auto-run** in your [table settings](table-management-settings.md) before importing.
+    > **Tip:** If you're importing into a table that already has enrichment columns and you don't want them to run on the new rows, choose `Save and don't run`. If you want to prevent enrichments from automatically running on all future row additions as well, turn off **Auto-run** in your [table settings](../table-management-settings.md) before importing.
 
 ## Next steps after importing
 
@@ -45,7 +45,7 @@ Once your data is in Clay, you can enrich rows to pull in additional information
     -   **Work email:** Click **Add enrichment**, search for **Work Email**, and select the waterfall. It requires each person's full name and company domain.
     -   **Mobile phone:** Click **Add enrichment**, search for **Phone number**, and select the waterfall under **Waterfalls**. It requires the person's professional profile URL, which is returned by the people search.
 
-Importing a company list does not automatically add contact rows, emails, or phone numbers — you need to run these steps explicitly. Once enrichments are configured, Clay auto-runs them on any new records added to your table. For full setup instructions, see [Finding companies and people in Clay](finding-companies-and-people-in-clay.md), [Work Email waterfall](work-email-waterfall.md), and [Waterfalls](building-a-data-waterfall.md).
+Importing a company list does not automatically add contact rows, emails, or phone numbers — you need to run these steps explicitly. Once enrichments are configured, Clay auto-runs them on any new records added to your table. For full setup instructions, see [Finding companies and people in Clay](../finding-companies-and-people-in-clay.md), [Work Email waterfall](../work-email-waterfall.md), and [Waterfalls](../building-a-data-waterfall.md).
 
 **If your CSV already has partial data and you want to verify or fill in only what's missing:**
 

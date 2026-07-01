@@ -73,7 +73,7 @@ Check both the **Queued rows** and **Errored rows** tabs for rows with **Run Sto
 
 1.  Right-click the column header showing **Run Stopped** → **Run column** → **Run [N] empty or out-of-date rows**.
 
-For more options on re-running specific rows or cells, see [Run progress](run-progress.md).
+For more options on re-running specific rows or cells, see [Run progress](../run-progress.md).
 
 ## Run Setup settings (Audiences)
 

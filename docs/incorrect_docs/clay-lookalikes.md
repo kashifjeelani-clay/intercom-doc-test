@@ -76,4 +76,4 @@ Find people similar to a seed person. In addition to the standalone **Find Peopl
 
 ## Migrating from Ocean.io
 
-Clay Lookalikes replaces Ocean.io's lookalike enrichments and sources. Ocean.io's lookalike features have been removed from Clay — see [Ocean.io integration](ocean-io-integration-overview.md) for migration guidance.
+Clay Lookalikes replaces Ocean.io's lookalike enrichments and sources. Ocean.io's lookalike features have been removed from Clay — see [Ocean.io integration](../ocean-io-integration-overview.md) for migration guidance.

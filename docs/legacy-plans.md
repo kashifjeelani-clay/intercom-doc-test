@@ -146,7 +146,7 @@ If you're on Explorer (Legacy) and considering a move to Enterprise, here is a s
 
 **Features you gain on Enterprise** (not available on Explorer Legacy):
 
--   **Bulk enrichment** — process large datasets in rolling batches with no cumulative row cap; see [Bulk enrichment](./bulk-enrichment.md)
+-   **Bulk enrichment** — process large datasets in rolling batches with no cumulative row cap; see [Bulk enrichment](incorrect_docs/bulk-enrichment.md)
 -   **Web intent signals** — access website visitor activity data
 -   **CRM integrations** — connect to Salesforce, HubSpot, Marketo, and other CRMs
 -   **Data warehouse connections** — sync with Snowflake and other data warehouses
@@ -169,7 +169,7 @@ If you're on Explorer (Legacy) and considering a move to Enterprise, here is a s
 | Annual discount | 10% | 20% |
 | Source search limit | 25,000 contacts / accounts per search | 50,000 contacts / accounts per search |
 | Scheduled source frequency | Daily | Up to hourly |
-| Table version history | 30 days | 180 days (see [Table versions](./table-versions.md)) |
+| Table version history | 30 days | 180 days (see [Table versions](incorrect_docs/table-versions.md)) |
 | Support | Standard support queue | Dedicated Slack channel |
 
 Modern plans also include ~50% cheaper data costs on 70+ enrichments compared to legacy pricing — your data credits go further on Enterprise.

@@ -110,4 +110,4 @@ Enable **web search** if the agent needs to research the company live. Disable i
 
 In the **Configure** tab, add named output fields — for example, a numeric `score` field and a text `rationale` field. Explicit fields make results more consistent and easier to filter or reference in downstream columns.
 
-For templates, Sculptor-assisted agent building, and advanced configuration, see [Claygent builder](claygent-builder.md).
+For templates, Sculptor-assisted agent building, and advanced configuration, see [Claygent builder](../claygent-builder.md).

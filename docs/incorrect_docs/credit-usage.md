@@ -165,7 +165,7 @@ If table-level auto-run is disabled but credits are still being consumed, the mo
 
 -   **Manual column runs** — any Editor on the workspace can right-click a column header and choose **Run column**, which bypasses the auto-run toggle and immediately dispatches enrichments.
 -   **Scheduled columns** — a column may have a recurring schedule that runs independently of the table's auto-run setting. Open **Run Settings → Re-run columns on a schedule** to review which columns are scheduled and disable any you no longer need. See [Ways to save Clay credits](clay-credit-conservation.md) for guidance on auditing scheduled runs.
--   **Hidden columns with auto-run enabled** — columns that are hidden from view still run if their individual auto-run toggle is on. Open the columns panel to check for hidden columns and disable auto-run for any you don't need actively running. See [Table columns overview](table-columns-overview.md) for details.
+-   **Hidden columns with auto-run enabled** — columns that are hidden from view still run if their individual auto-run toggle is on. Open the columns panel to check for hidden columns and disable auto-run for any you don't need actively running. See [Table columns overview](../table-columns-overview.md) for details.
 
 To identify what triggered a specific run, use the **Run view** in the [table credit usage dashboard](#understanding-table-specific-credit-usage). Each entry shows whether the run was manual, automated, or scheduled, along with a timestamp.
 
@@ -173,7 +173,7 @@ To identify what triggered a specific run, use the **Run view** in the [table cr
 
 Clicking **Stop** on a running table or canceling a column run does not immediately halt all enrichments. Clay cancels cells that are still queued (not yet dispatched), but any requests already sent to an external data provider will run to completion and consume credits. You may see a brief delay before the table fully halts while these in-progress calls finish.
 
-To avoid unexpected spend before it starts, disable [auto-run](table-management-settings.md) before importing large batches of rows. See [Stopping a run](run-progress.md) for full details on stop and cancel behavior.
+To avoid unexpected spend before it starts, disable [auto-run](../table-management-settings.md) before importing large batches of rows. See [Stopping a run](../run-progress.md) for full details on stop and cancel behavior.
 
 ### Credits spiked after editing a formula or upstream column
 
@@ -188,7 +188,7 @@ With **Keep existing results** on, auto-run only fires on cells that are empty o
 
 Alternatively, turn auto-run **off** entirely before editing (`⛭` → toggle **Auto-run** off), make your changes, then manually run only the specific rows or columns you need.
 
-See [Table management settings](table-management-settings.md) for full details on **Keep existing results** and how the auto-run mode affects which cells run.
+See [Table management settings](../table-management-settings.md) for full details on **Keep existing results** and how the auto-run mode affects which cells run.
 
 ### Requesting a goodwill credit refund
 
