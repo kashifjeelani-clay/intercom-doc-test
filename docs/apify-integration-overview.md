@@ -162,4 +162,4 @@ If your Apify actor column uses input data from another column (for example, a U
 
 This ensures the actor only fires once the required data is available. If an existing run condition is already set and causing the issue, remove it and replace it with this one.
 
-For full run condition syntax and examples, see [Conditional runs](conditional-runs.md). For other general steps when cells are stuck in Queued — including a hard refresh (`Ctrl+Shift+R` on Windows/Linux, `Cmd+Shift+R` on Mac) — see [Run progress](run-progress.md#troubleshooting-cells-stuck-in-queued-status).
+For full run condition syntax and examples, see [Conditional runs](incorrect_docs/conditional-runs.md). For other general steps when cells are stuck in Queued — including a hard refresh (`Ctrl+Shift+R` on Windows/Linux, `Cmd+Shift+R` on Mac) — see [Run progress](run-progress.md#troubleshooting-cells-stuck-in-queued-status).

@@ -141,13 +141,13 @@ When you check **Replace columns with function** during function creation, Clay 
 
 **To restore the original separate columns:**
 
-There's no one-click way to split a function back into standalone columns. If you need the original column layout back, use [table version history](table-versions.md):
+There's no one-click way to split a function back into standalone columns. If you need the original column layout back, use [table version history](incorrect_docs/table-versions.md):
 
 1.  In your table, click **History** (bottom-right corner) → **All configuration versions**.
 2.  Find a version taken before you created the function.
 3.  Click **Restore Configuration** and confirm.
 
-Restoring removes the function column (which was added after the snapshot) and brings back your original columns with their configurations. Note that table versioning restores **structure and configuration only** — cell value data is not affected by a version restore. See [Table versions](table-versions.md) for full details on what changes.
+Restoring removes the function column (which was added after the snapshot) and brings back your original columns with their configurations. Note that table versioning restores **structure and configuration only** — cell value data is not affected by a version restore. See [Table versions](incorrect_docs/table-versions.md) for full details on what changes.
 
 ### Can I use a function someone else on my team built?
 

@@ -96,7 +96,7 @@ By default, auto-run is **on** for every table — waterfall columns (such as a 
 
 **To prevent a waterfall from re-running on rows that already have a result**, add an **"Only run if"** condition to the waterfall column — for example, `Email is empty`. Clay skips the waterfall for any row where the output field is already populated, preventing duplicate enrichment and unnecessary credit spend.
 
-For more ways to control credit usage, see [Ways to save Clay credits](clay-credit-conservation.md).
+For more ways to control credit usage, see [Ways to save Clay credits](incorrect_docs/clay-credit-conservation.md).
 
 ## How waterfall validation works
 
@@ -163,7 +163,7 @@ When enriching a person or company, providers match on name or profile data — 
 
 **Detecting mismatches:** Add a formula or AI column that extracts the domain from the contact's work email (the portion after `@`) and compares it to the enriched company domain. A boolean "Domain Match" column makes it easy to filter and audit mismatched rows at scale.
 
-**Preventing mismatches from reaching downstream systems:** Use the domain-match column as a run condition on downstream write steps — for example, your **Update CRM Record** or **Create CRM Record** action — so a contact is only pushed when the email domain and company domain agree. See [Conditional runs](conditional-runs.md) for how to set this up.
+**Preventing mismatches from reaching downstream systems:** Use the domain-match column as a run condition on downstream write steps — for example, your **Update CRM Record** or **Create CRM Record** action — so a contact is only pushed when the email domain and company domain agree. See [Conditional runs](incorrect_docs/conditional-runs.md) for how to set this up.
 
 **Fixing contacts that are already mismatched:**
 

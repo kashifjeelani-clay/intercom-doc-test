@@ -66,7 +66,7 @@ To configure a delay:
 2.  Enter the number of seconds to wait (up to 600 seconds/10 minutes).
 3.  Use a formula to set different delays per row.
 
-**Need a delay longer than 10 minutes?** Chain multiple enrichment columns — each set to `Run after delay` (up to 600 seconds) — and use [conditional runs](conditional-runs.md) to gate each step on the previous column completing. For example, six chained delay columns each set to 600 seconds creates a 60-minute total delay.
+**Need a delay longer than 10 minutes?** Chain multiple enrichment columns — each set to `Run after delay` (up to 600 seconds) — and use [conditional runs](incorrect_docs/conditional-runs.md) to gate each step on the previous column completing. For example, six chained delay columns each set to 600 seconds creates a 60-minute total delay.
 
 ## Custom rate limit
 

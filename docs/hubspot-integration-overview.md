@@ -194,7 +194,7 @@ For more on additive source behavior across all source types, see [Will rows alr
 
 The **Import objects from HubSpot** source is limited to 50,000 records. Enabling auto-delete does not bypass this limit for HubSpot imports — auto-delete only resets the record count for webhook and send-table-data sources, not for CRM imports.
 
-For large, one-time batch processing (for example, 100k companies), use [Bulk Enrichment](bulk-enrichment.md) instead of a standard table:
+For large, one-time batch processing (for example, 100k companies), use [Bulk Enrichment](incorrect_docs/bulk-enrichment.md) instead of a standard table:
 
 1. Export your HubSpot list to CSV from HubSpot.
 2. Create a Bulk Enrichment table (`New` → `Bulk enrichment`) and select **Import from CSV** as the source type.

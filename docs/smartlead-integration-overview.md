@@ -181,6 +181,6 @@ This typically happens when the **Add lead to campaign** action runs before all 
 
 `/First Name is not empty AND /Company Name is not empty`
 
-Rows that fail the condition show **"Run condition not met"** and are skipped without consuming credits. See [Conditional runs](conditional-runs.md) for full syntax and examples.
+Rows that fail the condition show **"Run condition not met"** and are skipped without consuming credits. See [Conditional runs](incorrect_docs/conditional-runs.md) for full syntax and examples.
 
 **If you're uploading leads manually:** Before exporting from Clay, use the table **Filter** (in the toolbar) to find rows where any required column **is empty**. Fill in or remove those rows before exporting so no incomplete leads enter your Smartlead campaign. See [Filtering](table-columns-overview.md) for instructions.

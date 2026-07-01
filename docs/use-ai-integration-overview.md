@@ -191,7 +191,7 @@ If you have the `response` output extracted as a separate column (a basic field 
 
 **Run the AI only for that row (workaround for persistent issues)**
 
-If rerunning the AI column for that row continues to return incorrect results and a direct paste isn't suitable, add a new AI column with a [run condition](conditional-runs.md) that targets only the specific row. In the new column's **Run Settings**, click **Add run condition** and write a formula that evaluates to `true` only for that row — for example, matching a unique identifier or a value specific to that contact. This isolates the AI prompt for the edge case without affecting the rest of your table.
+If rerunning the AI column for that row continues to return incorrect results and a direct paste isn't suitable, add a new AI column with a [run condition](incorrect_docs/conditional-runs.md) that targets only the specific row. In the new column's **Run Settings**, click **Add run condition** and write a formula that evaluates to `true` only for that row — for example, matching a unique identifier or a value specific to that contact. This isolates the AI prompt for the edge case without affecting the rest of your table.
 
 ### Cells showing "Some inputs missing"
 
@@ -323,7 +323,7 @@ Pulling properties directly from the enrichment column gives you access to the f
 
 **Alternatively**, configure the Scrape Website enrichment to return less data. Open the enrichment column settings and deselect output fields you don't need (for example, uncheck **Body Text** if your prompt only requires the title and description).
 
-**Skipping rows where scraped data is missing:** If you want the AI column to skip rows where the Scrape Website column returned no data, add a run condition. Open the AI column's **Run Settings**, click **Add run condition**, and set it to `/Scrape Website is not empty`. See [Conditional runs](conditional-runs.md) for full details.
+**Skipping rows where scraped data is missing:** If you want the AI column to skip rows where the Scrape Website column returned no data, add a run condition. Open the AI column's **Run Settings**, click **Add run condition**, and set it to `/Scrape Website is not empty`. See [Conditional runs](incorrect_docs/conditional-runs.md) for full details.
 
 ### Column header shows a warning icon when using your own OpenAI API key
 
@@ -335,7 +335,7 @@ If a Use AI column header displays a **yellow warning icon** after you connect y
 
 2. **Upgrade your OpenAI API usage tier.** In your OpenAI account, increase your usage tier to raise your TPM limits. You can review your current limits and request a tier increase at [Limits](https://platform.openai.com/settings/organization/limits). See [OpenAI usage tiers](https://platform.openai.com/docs/guides/rate-limits#usage-tiers) for details on each tier.
 
-**Note:** If the column header shows a **red warning icon** instead of yellow, the rate limits on your key are too low to run the column at all — not just slow. Switching to Clay's managed account or upgrading to a higher OpenAI tier is required before the column can run. See [AI tokens](ai-tokens.md) for minimum TPM requirements by model.
+**Note:** If the column header shows a **red warning icon** instead of yellow, the rate limits on your key are too low to run the column at all — not just slow. Switching to Clay's managed account or upgrading to a higher OpenAI tier is required before the column can run. See [AI tokens](incorrect_docs/ai-tokens.md) for minimum TPM requirements by model.
 
 ### Cells showing "Rate limit wait time exceeded" with your own OpenAI API key
 
@@ -347,7 +347,7 @@ Clay reads rate-limit headers in OpenAI's responses to detect your key's availab
 
 1. **Switch to Clay's managed OpenAI account (recommended for "Create or modify content" columns).** Open the column settings, click the **Account** dropdown, and select the default Clay-managed account. Clay's managed account handles rate limits automatically — no tier upgrade needed on your end.
 
-2. **Upgrade your OpenAI API usage tier.** In your OpenAI account, increase your usage tier to raise your TPM limits. Clay requires at least **30,000 TPM** for "Create or modify content" Use AI columns. Claygent (web research) columns require substantially higher TPM — see [AI Tokens](ai-tokens.md) for the specific requirements by provider.
+2. **Upgrade your OpenAI API usage tier.** In your OpenAI account, increase your usage tier to raise your TPM limits. Clay requires at least **30,000 TPM** for "Create or modify content" Use AI columns. Claygent (web research) columns require substantially higher TPM — see [AI Tokens](incorrect_docs/ai-tokens.md) for the specific requirements by provider.
 
 To check your current OpenAI rate limits and request a tier increase:
 - [Usage](https://platform.openai.com/usage)
@@ -365,7 +365,7 @@ Clay's Scrape Website action includes JavaScript rendering (enabled by default) 
 **Workarounds:**
 
 -   **Export directly from the platform.** Most event management platforms, databases, and portals offer a built-in data export for logged-in users. Look for a "Download attendee list," "Export," or "Download CSV" option inside the platform once you're signed in.
--   **Import the exported file into Clay.** Once you have the data as a CSV, upload it to a Clay table via **Tools → Import** and select your file. See [How to import your CSV into Clay](csv-import-overview.md) for step-by-step instructions, then add enrichment columns to fill in missing details like email addresses, social profiles, and full names.
+-   **Import the exported file into Clay.** Once you have the data as a CSV, upload it to a Clay table via **Tools → Import** and select your file. See [How to import your CSV into Clay](incorrect_docs/csv-import-overview.md) for step-by-step instructions, then add enrichment columns to fill in missing details like email addresses, social profiles, and full names.
 -   **Capture the underlying API request (advanced).** If the platform doesn't offer a built-in export, open your browser's DevTools **Network** tab while signed in, navigate to the page, and find the underlying API call that loads the data. You can replay that authenticated request — which carries your login cookies or token — to extract the raw data manually.
 
 ### Scraping data spread across multiple pages

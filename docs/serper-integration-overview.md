@@ -91,7 +91,7 @@ To avoid hitting these limits:
 
 -   **Run in batches**: Process your table in smaller groups of rows rather than running all rows at once.
 -   **Limit to 3 concurrent locations at a time**: Running more than 3 locations simultaneously can trigger Serper's rate limits. Serper tends to overestimate its own rate limits, so staying at 3 or fewer concurrent locations is the safest threshold.
--   **Use sequential columns with conditional logic**: If you have multiple Serper columns (e.g., one per page of results), use [conditional runs](conditional-runs.md) to gate each column on the previous one completing, rather than running all columns in parallel.
+-   **Use sequential columns with conditional logic**: If you have multiple Serper columns (e.g., one per page of results), use [conditional runs](incorrect_docs/conditional-runs.md) to gate each column on the previous one completing, rather than running all columns in parallel.
 
 For production-scale Google Maps scraping across many locations (state-wide or country-wide), consider handling pagination outside Clay — using a workflow tool like n8n or Make, or a Python script — then pushing results into a Clay table via [webhook](webhook-integration-guide.md) for further enrichment.
 

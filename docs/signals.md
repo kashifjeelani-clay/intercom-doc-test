@@ -60,7 +60,7 @@ To trigger the Signal right away after new rows arrive, open the signal column h
 Use [Send Table Data](send-table-data.md) with a run condition to push qualifying rows to a destination table, then set up your signal to monitor that destination table:
 
 1.  In your source table, add a **Send Table Data** column. Include the **company domain** in the columns you send — the signal needs a company domain or company name to look up company information.
-2.  Optionally add a [run condition](conditional-runs.md) so only qualifying rows (for example, companies with a score of 50 or above) are sent. Enable **Update existing rows on re-run** to avoid duplicates as your source table grows.
+2.  Optionally add a [run condition](incorrect_docs/conditional-runs.md) so only qualifying rows (for example, companies with a score of 50 or above) are sent. Enable **Update existing rows on re-run** to avoid duplicates as your source table grows.
 3.  In the destination table, click the **"rows from: …"** source cell and use **Add to column** to extract the company domain into its own standalone column.
 4.  Set up your signal in the destination table, selecting the company domain column as the identifier.
 

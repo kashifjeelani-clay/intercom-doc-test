@@ -138,4 +138,4 @@ If you need to tell apart records that Clay enriched from those enriched by a di
 
 This way, each tool's label in the shared source field tells the other tool to leave the record alone.
 
-For more on conditional formula expressions in formula columns, see [Formulas](formula-generator.md). For run conditions on enrichment columns, see [Conditional runs](conditional-runs.md).
+For more on conditional formula expressions in formula columns, see [Formulas](formula-generator.md). For run conditions on enrichment columns, see [Conditional runs](incorrect_docs/conditional-runs.md).

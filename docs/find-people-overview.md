@@ -116,7 +116,7 @@ If you have a saved Sales Navigator search and want to pull those results into C
 
 **Note:** This source requires a Sales Navigator **people search URL** (`https://www.linkedin.com/sales/search/people/...`), not a saved lead list URL (`linkedin.com/sales/lists/people`) or a saved search URL (those containing `savedSearchId`). If you have a saved Sales Navigator lead list, recreate the equivalent filters as a fresh people search on Sales Navigator and copy that URL instead. Each imported result costs 1 Clay credit.
 
-If the list was manually curated and cannot be recreated from search filters, export it from Sales Navigator as a CSV and [import it into Clay](csv-import-overview.md) instead.
+If the list was manually curated and cannot be recreated from search filters, export it from Sales Navigator as a CSV and [import it into Clay](incorrect_docs/csv-import-overview.md) instead.
 
 If your Sales Navigator search matches more than 2,500 leads, the 2,500 cap is enforced by LinkedIn — there is no way to raise it within a single import. To bring in a larger set, split your search into smaller segments so each stays under the limit. Use any filter dimension to divide the results:
 

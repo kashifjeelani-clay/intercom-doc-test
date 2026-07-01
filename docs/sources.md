@@ -295,7 +295,7 @@ For standard source imports (CSV, CRM, list builders), Clay stops importing sile
 
 **No.** Manually deleting rows removes them from the table view but does not decrement the underlying source record count. Tables and their data sources are separate entities — the source tracks its own total independently. This means a table can show far fewer than 50,000 visible rows while the source has already accumulated 50,000 records, causing a "Record limit reached" error even when the table appears mostly empty.
 
-To free up source capacity, enable **auto-delete**. For compatible source types (webhooks, send table data, and signal sources), auto-delete removes rows from both the table and the source, keeping the source record count in check. See [auto-delete](auto-delete.md) for setup instructions and source compatibility details.
+To free up source capacity, enable **auto-delete**. For compatible source types (webhooks, send table data, and signal sources), auto-delete removes rows from both the table and the source, keeping the source record count in check. See [auto-delete](incorrect_docs/auto-delete.md) for setup instructions and source compatibility details.
 
 ### My scheduled Snowflake or CRM import appears to have stopped importing new records
 
@@ -305,13 +305,13 @@ Clay's scheduled source runs continue to fire normally after the limit is reache
 
 **Important:** This is the *source record count*, not the table's visible row count. The source tracks every record it has ever introduced to the table, including rows you have since deleted. A table can show far fewer than 50,000 visible rows while the source has already accumulated 50,000 records. Deleting rows from the table does not reset the source record count.
 
-**Auto-delete does not help for these source types.** Auto-delete only resets the source record count for webhooks, send table data, and signal sources. For Snowflake query imports, HubSpot, Salesforce, and other CRM or database connections, auto-delete removes rows from the table view but the source record count keeps accumulating. See [auto-delete](auto-delete.md) for source compatibility details.
+**Auto-delete does not help for these source types.** Auto-delete only resets the source record count for webhooks, send table data, and signal sources. For Snowflake query imports, HubSpot, Salesforce, and other CRM or database connections, auto-delete removes rows from the table view but the source record count keeps accumulating. See [auto-delete](incorrect_docs/auto-delete.md) for source compatibility details.
 
 **To resolve this:**
 
 1.  **Create a new import source.** Delete the old source definition and add a new one with the same query or connection settings. A new source starts at a fresh 0/50,000 record count. Before adding the new source, enable [auto-dedupe](table-management-settings.md) on a unique identifier column (such as email or company domain) — this automatically removes any duplicate rows if the new source re-imports records already present in your table.
 
-2.  **Set a row count alert.** Use [table alerts](table-alerts.md) to get notified before the next source approaches the limit. The default threshold is 45,000 rows, giving you time to act before importing stops.
+2.  **Set a row count alert.** Use [table alerts](incorrect_docs/table-alerts.md) to get notified before the next source approaches the limit. The default threshold is 45,000 rows, giving you time to act before importing stops.
 
 For large ongoing Snowflake imports that regularly approach or exceed 50,000 records, consider [Audiences](audiences.md) instead of a standard table. Audiences scales to millions of records without per-source limits.
 
