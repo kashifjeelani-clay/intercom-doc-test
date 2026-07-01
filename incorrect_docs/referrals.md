@@ -1,14 +1,14 @@
 ---
 title: Referrals
-description: Learn how you can earn 3,000 credits each time you refer someone.
+description: Learn how you can earn 5,000 credits each time you refer someone.
 last_synced: 2026-04-26T01:40:32.262Z
 ---
 
 # Referrals
 
-Learn how you can earn 3,000 credits each time you refer someone.
+Learn how you can earn 5,000 credits each time you refer someone.
 
-Clay's referral program allows you to invite others to join and earn rewards. When someone signs up using your referral link and activates a **paying workspace**, both of you will earn **3,000 Clay credits**. These credits are not added immediately — they are typically applied around **30 days after the referred user upgrades to a paid plan**. Referral credits are not subject to the usual rollover rules, so they stay in your account until you use them.
+Clay's referral program allows you to invite others to join and earn rewards. When someone signs up using your referral link and activates a **paying workspace**, both of you will earn **5,000 Clay credits**. These credits are added to your account immediately upon signup — you don't need to wait for the referred user to upgrade to a paid plan. Referral credits are not subject to the usual rollover rules, so they stay in your account until you use them.
 
 To access and share your referral link:
 

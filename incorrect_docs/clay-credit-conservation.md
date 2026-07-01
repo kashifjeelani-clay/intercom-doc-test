@@ -74,7 +74,7 @@ When you add a **Use AI** or **Claygent** column, the model you select directly 
 
 **How do you implement this?**
 
-When configuring an AI column, open the **Model** dropdown in the column settings and select a more cost-effective option. For example, **GPT 4.1 Nano** costs 0.1 credits/row for content generation (Use AI) and 0.5 credits/row for web research (Claygent) — compared to **Neon** at 2 credits/row and **Argon** at 3 credits/row for Claygent tasks.
+When configuring an AI column, open the **Model** dropdown in the column settings and select a more cost-effective option. For example, **GPT 4.1 Nano** costs 0.1 credits/row for content generation (Use AI) and 1.5 credits/row for web research (Claygent) — compared to **Neon** at 2 credits/row and **Argon** at 3 credits/row for Claygent tasks.
 
 As a general rule: match the model to the task complexity. Reserve higher-credit models like Argon for multi-step research tasks where quality matters most; use lower-cost models like GPT 4.1 Nano for high-volume, simpler tasks where efficiency is the priority.
 
@@ -156,7 +156,7 @@ See [Find People in Clay](find-people-overview.md) for the full list of filter a
 
 **How do you implement this?**
 
-Click the `Sandbox mode` button in the table toolbar. Clay duplicates the top 10 rows of your table into an isolated sandbox (expandable to 50 rows). Make and test your changes there; when ready, click **Review changes** and then **Publish** to apply the configuration to your full table.
+Click the `Sandbox mode` button in the table toolbar. Clay duplicates the top 10 rows of your table into an isolated sandbox (expandable to 100 rows). Make and test your changes there; when ready, click **Review changes** and then **Publish** to apply the configuration to your full table.
 
 ## Audit and manage scheduled column runs
 

@@ -47,7 +47,7 @@ When you delete a workbook, all tables within it are deleted along with it.
 
 ## Recover deleted tables and workbooks
 
-Once you delete a table or workbook, it will end up in your Trash. You can access Trash from the bottom left of the workspace sidebar. Deleted items are stored in Trash for **30 days**, after which they are permanently deleted. Once you open Trash you can:
+Once you delete a table or workbook, it will end up in your Trash. You can access Trash from the bottom left of the workspace sidebar. Deleted items are stored in Trash for **60 days**, after which they are permanently deleted. Once you open Trash you can:
 
 -   Delete tables permanently.
 -   Recover tables. You cannot edit a table in Trash unless you restore it.
@@ -67,4 +67,4 @@ After that alert closes, there is no self-serve way to recover deleted rows. How
 -   Your table URL
 -   Approximately when the rows were deleted
 
-Note: rows cannot be restored if doing so would put your table over the 50,000-row limit.
+Note: rows cannot be restored if doing so would put your table over the 100,000-row limit.

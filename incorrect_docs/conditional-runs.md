@@ -161,7 +161,7 @@ When a run condition is not met, Clay skips the enrichment and stores **no outpu
 
 **This is why downstream columns that depend on this data will show empty results for those rows.** The row itself still appears in any downstream column, but the value fed into it from the skipped enrichment is empty — so any formula, waterfall step, or output that requires this data will produce no result for that row.
 
-**Note:** If a row previously ran and produced output, that output is preserved when the condition is not met on a subsequent run — the run condition only gates new executions and does not clear existing cell data.
+**Note:** If a row previously ran and produced output, that output is cleared when the condition is not met on a subsequent run — the run condition re-evaluates on every run and clears existing cell data whenever the condition no longer holds.
 
 ### Using the "Explain" button to diagnose a skipped run condition
 
@@ -250,7 +250,7 @@ This queues every row in the column regardless of its current state — the same
 
 ### Running a column can re-trigger dependent downstream columns
 
-When you run an enrichment column that other enrichment columns depend on, Clay shows a **Confirm Run** panel before starting. This panel lists any dependent downstream columns that may automatically re-run and their estimated credit cost. If you confirm, those downstream columns are marked as out-of-date and queued to re-run — their stored values persist until they actually execute, at which point new results replace them.
+When you run an enrichment column that other enrichment columns depend on, Clay shows a **Confirm Run** panel before starting. This panel lists any dependent downstream columns that may automatically re-run and their estimated credit cost. If you confirm, those downstream columns are marked as out-of-date and queued to re-run — their stored values are cleared immediately, before the queued columns execute, and repopulate once new results are produced.
 
 Before confirming a run on an upstream column, check whether any listed downstream columns contain data you want to keep. If so:
 

@@ -63,11 +63,11 @@ Yes. Admins can adjust limits up or down at any time for both workbooks and lega
 
 **How long does a credit limit last?**
 
-Limits are designed with a monthly cadence in mind, aligning with how most enterprise customers plan their budgets and credit usage.
+Limits are designed with a weekly cadence in mind, aligning with how most enterprise customers plan their budgets and credit usage.
 
 **Does past credit usage count towards the credit limit?**
 
-No — credit limits only apply to usage that occurs after the limit has been set. Any credits spent before the limit was configured will not count towards it.
+Yes — credit limits apply retroactively to usage within the current billing cycle. Any credits spent before the limit was configured will still count towards it.
 
 **What happens when a billing cycle resets?**
 

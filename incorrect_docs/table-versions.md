@@ -20,7 +20,7 @@ Table versions capture your table's **structure and configuration**, including:
 -   Active filters and sorts
 -   Table-level run settings
 
-**Note:** Cell value data is not versioned. Table Versioning preserves your table's structure and configuration—not the actual data within rows. If row-level data is overwritten or deleted, it cannot be recovered through versioning.
+**Note:** Cell value data is versioned along with structure and configuration. If row-level data is overwritten or deleted, you can recover it by restoring an earlier table version.
 
 ## Viewing your version history
 
@@ -87,7 +87,7 @@ Clay also creates versions automatically — a snapshot is taken after approxima
 | Free / Trial | Not enabled |
 | Starter, Explorer, Pro (legacy paid plans) | 30 days |
 | Launch, Growth | 30 days |
-| Enterprise | 180 days |
+| Enterprise | 365 days |
 
 ## Troubleshooting
 

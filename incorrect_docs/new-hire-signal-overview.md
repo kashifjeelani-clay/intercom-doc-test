@@ -8,7 +8,7 @@ last_synced: 2026-04-26T01:40:24.407Z
 
 Track new hires signals and act on timely data.
 
-New hire Signals track recently hired employees at target companies within the last three months. You can set specific filters to monitor the most relevant new hires at these accounts.
+New hire Signals track recently hired employees at target companies within the last six months. You can set specific filters to monitor the most relevant new hires at these accounts.
 
 Monitoring new hires is beneficial because they:
 

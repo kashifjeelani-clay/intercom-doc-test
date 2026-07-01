@@ -16,7 +16,7 @@ Credit budgets appear at `Settings` → `Budgets`. Only workspace admins can cre
 
 A **budget** is a named credit pool with:
 
--   A **credit limit** — the maximum number of credits the budget can spend in its lifetime (limits do not auto-reset on a billing cycle).
+-   A **credit limit** — the maximum number of credits the budget can spend in its lifetime (limits automatically reset at the start of each billing cycle).
 -   A **current balance** — how many credits remain (limit minus spend so far).
 -   An **access rule** — whether all workspace members can draw from the budget by default, or only members explicitly granted access.
 -   An optional list of **users** or **user groups** with explicit access.
@@ -69,7 +69,7 @@ To update access for an existing budget, open it from `Settings` → `Budgets`, 
 Clay sends email alerts to workspace admins when a budget reaches specific usage thresholds:
 
 -   **75%** of the credit limit used — early warning.
--   **90%** of the credit limit used — approaching the limit.
+-   **95%** of the credit limit used — approaching the limit.
 -   **100%** of the credit limit used — budget exhausted, processing in assigned resources has stopped.
 
 Alerts fire once per threshold crossing. They reset when an admin increases the credit limit or resets the budget's spend.

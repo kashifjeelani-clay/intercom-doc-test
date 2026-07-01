@@ -36,7 +36,7 @@ Ensure you have the following to successfully lead score within Clay:
 
 ## Setting up lead scoring with Score Row in Clay
 
-**Score Row in Clay** is a built-in enrichment that scores each row based on up to 15 criteria you define — no formula required. Each criterion compares a column value against a set of keywords and assigns a numerical score. The enrichment outputs a total **Score** and a **Score Reasons** list explaining which criteria matched.
+**Score Row in Clay** is a built-in enrichment that scores each row based on up to 20 criteria you define — no formula required. Each criterion compares a column value against a set of keywords and assigns a numerical score. The enrichment outputs a total **Score** and a **Score Reasons** list explaining which criteria matched.
 
 ### **Step 1: Add the Score Row enrichment**
 
@@ -44,7 +44,7 @@ In your table, click **+ Enrichment**, search for **Score Row in Clay**, and add
 
 ### **Step 2: Set the number of criteria**
 
-In the **# of Scoring Criteria** field, enter how many criteria you want to use (up to 15).
+In the **# of Scoring Criteria** field, enter how many criteria you want to use (up to 20).
 
 ### **Step 3: Configure each criterion**
 

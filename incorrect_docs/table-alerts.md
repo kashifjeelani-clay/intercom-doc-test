@@ -22,7 +22,7 @@ Table alerts are configured per table and are **opt-in** — you must explicitly
 3.  If alerts haven't been enabled yet, you'll see _"Alerts are not enabled for this table."_ Click `Configure alerts` — or click the **⚙️** icon in the panel header — to open `Alert settings`.
 4.  Toggle on `Enable alerts` to turn on alerts for this table.
 5.  Under `Alert Rules`, enable and configure each alert type individually:
-    -   `Column failure rate` — alerts when a column's error rate exceeds a threshold. Default: **75%**.
+    -   `Column failure rate` — alerts when a column's error rate exceeds a threshold. Default: **90%**.
         -   **Muting columns:** You can selectively choose which columns trigger alerts. By default, all columns are enabled for alerting. To mute specific columns:
             -   **Right-click** on a column header and select `Mute Alerts for Column`.
             -   Click the **three dots menu** on a column and select the muting option.
@@ -30,7 +30,7 @@ Table alerts are configured per table and are **opt-in** — you must explicitly
         -   When you add a new column to your table, it's automatically enabled for alerting by default.
         -   **Use case:** This is useful for non-critical upstream columns where errors are expected or acceptable. For example, if you only care about alerts for a critical downstream column like a Google Search enrichment, you can mute all other columns and enable alerting only for your critical column.
     -   `Row count limit` — alerts when your table's row count exceeds a threshold. Default: **45,000 rows**.
-    -   `Data inactivity` — alerts when a table with a signal, scheduled signal, or scheduled run has received no new data for a configured period. Default: **1 day**.
+    -   `Data inactivity` — alerts when a table with a signal, scheduled signal, or scheduled run has received no new data for a configured period. Default: **3 days**.
 6.  Click `Save`.
 
 **Note:** Alert rules apply to all users on the table. Alerts must be enabled before they will appear in the feed.
@@ -110,7 +110,7 @@ By default, alerts appear inside the `Table alerts` panel. You can also receive 
 
 ### **How do I get more or fewer alerts?**
 
-Open the `Table alerts` panel and click the **⚙️** icon in the header to access `Alert settings`. Lowering the thresholds means alerts fire more frequently; raising them means fewer alerts fire. The defaults — 75% for column failure rate and 45,000 rows for row count limit — work well as a starting point for most workflows.
+Open the `Table alerts` panel and click the **⚙️** icon in the header to access `Alert settings`. Lowering the thresholds means alerts fire more frequently; raising them means fewer alerts fire. The defaults — 90% for column failure rate and 45,000 rows for row count limit — work well as a starting point for most workflows.
 
 ### **Are thresholds set per-table or per-workbook?**
 
@@ -118,7 +118,7 @@ Thresholds are configured at the **table level**, giving you individual control 
 
 ### **What is the data inactivity alert?**
 
-The data inactivity alert fires when a table that has recurring data activity — a signal, scheduled signal, or scheduled run — stops receiving new data for a configured period. The default threshold is 1 day. This alert only applies to tables with recurring activity enabled; it won't fire for tables that were never regularly receiving data.
+The data inactivity alert fires when a table that has recurring data activity — a signal, scheduled signal, or scheduled run — stops receiving new data for a configured period. The default threshold is 3 days. This alert only applies to tables with recurring activity enabled; it won't fire for tables that were never regularly receiving data.
 
 ### **How often can the same alert fire?**
 

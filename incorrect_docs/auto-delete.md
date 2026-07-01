@@ -33,7 +33,7 @@ Follow these steps to set up auto-delete:
         -   Optionally, select a **Success column** from the dropdown. When set, a row will only become eligible for deletion after that specific column has run successfully. If no column is selected, rows are deleted as soon as all actions finish.
     -   **Delete based on conditional rules** — Deletes rows that match a set of custom filter conditions you define. Use this mode to trigger deletion based on more complex logic, such as time created or updated, values in a column, or column run status.
         -   Click `Add filter` to build your conditions. At least one filter rule is required to save this mode.
-5.  Optionally, enter a value in the **Number of rows to keep** field. This sets how many of the most recent rows are retained in the table when auto-delete runs. Leave the field empty to use the default of 100 rows.
+5.  Optionally, enter a value in the **Number of rows to keep** field. This sets how many of the most recent rows are retained in the table when auto-delete runs. Leave the field empty to use the default of 5,000 rows.
 6.  Click `Save changes`.
 
 **Warning:** Deleted rows are not recoverable.
@@ -55,7 +55,7 @@ Not all source types support fully bypassing the 50,000 record import limit. Onl
 -   **Signal sources** (e.g., web intent, job posts, news & fundraising, and other signal-based sources)
 -   **Audiences**
 
-All other source types — such as CRM integrations, Snowflake, and database connections — will continue accumulating toward the 50,000 limit even when auto-delete is enabled. Auto-delete will still delete rows from the table for those sources, but the underlying source record count is not cleared.
+CRM integrations such as Salesforce and HubSpot also fully bypass the 50,000 record import limit when auto-delete is enabled, the same as webhooks and signal sources. Only Snowflake and other database connections will continue accumulating toward the 50,000 limit even when auto-delete is enabled — auto-delete will still delete rows from the table for those sources, but the underlying source record count is not cleared.
 
 **Configuration warning:** When enabling auto-delete on a table that includes incompatible sources, Clay displays a warning: "This feature works for webhook, send table data, signal, and Audiences sources. All other source types will stop importing after 50,000 records, even with auto-delete enabled."
 

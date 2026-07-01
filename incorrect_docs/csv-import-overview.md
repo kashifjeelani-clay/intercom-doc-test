@@ -39,7 +39,7 @@ Once your data is in Clay, you can enrich rows to pull in additional information
 
 **If you imported a list of companies and want to find contacts and their email and phone numbers:**
 
-1.  **Find company domains (if your list has company names but no domains).** The Work Email waterfall requires a company domain for each row — a company name alone is not enough. In your table, click **Tools**, switch to the **Enrich** tab, and search for **Company Domain** to add the Company Domain waterfall. Map the column containing company names as the input and click **Save**. The waterfall cascades across multiple providers to find a domain, stopping as soon as one returns a result.
+1.  **Find company domains (if your list has company names but no domains).** The Work Email waterfall requires a company domain for each row — a company name alone is not enough. In your table, click **Tools**, switch to the **Enrich** tab, and search for **Company Domain** to add the Company Domain waterfall. Map the column containing company names as the input and click **Save**. The waterfall queries every provider in the cascade and returns the result from whichever provider responds last.
 2.  **Find contacts at each company.** Click **Tools**, switch to the **Import** tab, and select **Find People at These Companies** to search for people at each company by job title, seniority, or other criteria. Each match is returned as a separate contact row.
 3.  **Add email and phone enrichments to the contacts table:**
     -   **Work email:** Click **Add enrichment**, search for **Work Email**, and select the waterfall. It requires each person's full name and company domain.
@@ -85,7 +85,7 @@ To confirm which separator your file uses, open it in a plain text editor. Once 
 
 **If your upload is blocked because the file is too large:**
 
-Clay's CSV import supports a maximum of **100 columns** and **50,000 rows** per file by default. Uploads that exceed either limit are rejected before the import can proceed. If your file exceeds the column limit, remove any columns you don't need before uploading; if it exceeds the row limit, split it into smaller batches. If your workspace has a lower column limit configured by Clay support, the error will appear at that threshold instead.
+Clay's CSV import supports a maximum of **100 columns** and **100,000 rows** per file by default. Uploads that exceed either limit are rejected before the import can proceed. If your file exceeds the column limit, remove any columns you don't need before uploading; if it exceeds the row limit, split it into smaller batches. If your workspace has a lower column limit configured by Clay support, the error will appear at that threshold instead.
 
 **If your upload fails with an encoding error:**
 

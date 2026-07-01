@@ -64,9 +64,9 @@ Find people similar to a seed person. In addition to the standalone **Find Peopl
     -   **Use smart job title expansion** — when enabled, expands keywords with LLM-generated synonyms such as "VP of Eng" → "Vice President of Engineering" (on by default)
     -   **Countries** — filter people by country of location
     -   **Lookalike company domain** / **Lookalike company LinkedIn URLs** — override the seed person's employer with specific domains or LinkedIn URLs to find people at companies similar to a different target
-    -   **Domains to include / exclude** — force-include or skip people from specific company domains (the seed person's company is always excluded automatically)
+    -   **Domains to include / exclude** — force-include or skip people from specific company domains (the seed person's company is always included automatically)
     -   **Company primary countries**, **Company sizes**, **Company industries** — narrow the universe of lookalike companies considered
-    -   **Maximum number of lookalikes** — total number of people to return (default 25, max 50)
+    -   **Maximum number of lookalikes** — total number of people to return (default 50, max 100)
     -   **Maximum lookalikes per company** — cap per lookalike company (default 5, max 50)
 4.  Run the enrichment.
 

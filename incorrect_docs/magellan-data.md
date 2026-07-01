@@ -87,7 +87,7 @@ Returns all companies currently owned by the same private equity firm as a given
 -   Required:
     -   Company URL or domain: The company URL or domain to look up sibling portfolio companies for. Can be a portfolio company URL or a PE firm URL.
 -   Optional:
-    -   Limit: The maximum number of portfolio company records to return. Minimum is 2. Defaults to 40.
+    -   Limit: The maximum number of portfolio company records to return. Minimum is 2. Defaults to 25.
 
 **Outputs**
 
@@ -110,4 +110,4 @@ Returns all companies currently owned by the same private equity firm as a given
 
 ### Account connects but actions return no data
 
-If your Magellan Data account connects successfully but enrichments return no results, your Magellan account may have insufficient credits. Log in to your Magellan Data account to check your credit balance and purchase additional credits if needed. Note that credits are consumed per record enriched in Clay, regardless of whether data is found.
+If your Magellan Data account connects successfully but enrichments return no results, your Magellan account may have insufficient credits. Log in to your Magellan Data account to check your credit balance and purchase additional credits if needed. Note that credits are only consumed when matching data is found, so records with no results will not be charged.

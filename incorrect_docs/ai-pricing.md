@@ -15,7 +15,7 @@ _Clay uses two pricing structures for AI models—fixed and variable—so you pa
 
 **Fixed AI pricing** charges a flat number of data credits per task. It applies to 80% of models in Clay, including all of Clay's own models (Neon, Helium, Argon). The cost is exact and known before you run.
 
-**Variable AI pricing** charges data credits based on the actual cost of each run, with **0% markup**. It applies to 20% of models—the most advanced reasoning models available in Clay, typically used for sophisticated web-research tasks with multi-step reasoning—where the underlying compute cost can vary significantly from one prompt to the next. You'll see the exact cost per row in your Clay table once the run is completed. Rather than setting a flat rate high enough to cover the most expensive use cases—which would overcharge most users—variable pricing ensures each task is priced according to what it actually costs to run. This blended model of fixed and variable pricing results in customers paying less overall for AI in Clay.
+**Variable AI pricing** charges data credits based on the actual cost of each run, with a **15% markup**. It applies to 20% of models—the most advanced reasoning models available in Clay, typically used for sophisticated web-research tasks with multi-step reasoning—where the underlying compute cost can vary significantly from one prompt to the next. You'll see the exact cost per row in your Clay table once the run is completed. Rather than setting a flat rate high enough to cover the most expensive use cases—which would overcharge most users—variable pricing ensures each task is priced according to what it actually costs to run. This blended model of fixed and variable pricing results in customers paying less overall for AI in Clay.
 
 You can always see which pricing structure applies when selecting a model in the product.**‍**
 
@@ -49,7 +49,7 @@ The actual LLM cost is the cost charged by the AI provider of the model you've s
 
 **What happens during a run**
 
-1.  **Withhold.** Clay withholds an estimated number of data credits upfront—based on the 75th percentile of past runs for that model—multiplied by the number of rows.
+1.  **Withhold.** Clay withholds an estimated number of data credits upfront—based on the average of past runs for that model—multiplied by the number of rows.
 2.  **Execute.** The model processes your task.
 3.  **Calculate.** Clay calculates the actual LLM cost for each row.
 4.  **Reconcile.** The withheld amount is compared to the actual cost. Any surplus is refunded; any additional cost is deducted. You only pay for what was used.

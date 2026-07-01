@@ -17,7 +17,7 @@ This keeps your data current without manual updates (e.g., keeping enrichment da
 1.  While in a table, click the `⛭` icon in the top toolbar.
 2.  Under `Run Settings`, select Re-run columns `on a schedule`.
 3.  Choose the frequency to run:
-    1.  Hour (Enterprise only)
+    1.  Hour (available on all paid plans)
     2.  Day
     3.  Week
     4.  Month
@@ -55,5 +55,5 @@ Each plan has a limit to the total number of tables with scheduled columns.
 
 -   Starter: 100 tables
 -   Launch: 100 tables
--   Growth: 100 tables
+-   Growth: 500 tables
 -   Enterprise: 1000 tables
